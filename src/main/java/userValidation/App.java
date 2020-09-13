@@ -7,8 +7,9 @@ public class App {
         User user3 = new User("Ту", "Тутович", 54);
         User user4 = new User("Александр", "Александров", 121);
 
-        try {UserValidationService.checkUser(user2);}
-        catch (UserValidationException e) {
+        try {
+            UserValidationService.checkUser(user2);
+        } catch (UserValidationException e) {
             System.err.println(e.getMessage());
         }
     }
