@@ -7,7 +7,7 @@ public class UserValidationService {
                 || user.getLastName().length() > 15 || user.getAge() <= 0 || user.getAge() >= 120) {
             throw new UserValidationException(user + " Ошибка!!! Параметры данного пользователя недопустимы.");
         } else {
-            System.out.println(user + " Ошибка!!! Параметры данного пользователя в порядке.");
+            System.out.println(user + " Параметры данного пользователя в порядке.");
         }
     }
 }
